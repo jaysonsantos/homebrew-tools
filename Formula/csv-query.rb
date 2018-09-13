@@ -1,13 +1,14 @@
 class CsvQuery < Formula
   desc "Run SQL queries over CSV files"
   homepage "https://github.com/jaysonsantos/csv-query-rs"
-  url "https://github.com/jaysonsantos/csv-query-rs/archive/0.1.0.tar.gz"
-  sha256 "159e78bffe3692a949683f769dad46ced23984ed981bcbd6e1efa842ad4492cd"
+  url "https://github.com/jaysonsantos/csv-query-rs/archive/0.5.0.tar.gz"
+  sha256 "e320f698c71354e581db5611b5ac10ac4b642d0cf048f0724380c4d664b1cec2"
 
   depends_on "sqlite"
   depends_on "rust" => :build
 
   def install
+    Dir.chdir "csv-query-cli"
     system "cargo", "install", "--root", prefix
   end
 
