@@ -2,6 +2,7 @@ class Balde < Formula
   desc "Micro framework written in C"
   homepage "https://github.com/balde/balde"
   url "https://github.com/balde/balde/releases/download/v0.1.2/balde-0.1.2.tar.xz"
+  head "https://github.com/balde/balde.git"
   sha256 "d73a601479a1b29b26a0722ff2fe8ef38abf0ede04168217c729bb9d7a34915a"
 
   depends_on "automake"
